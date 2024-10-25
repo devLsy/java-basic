@@ -6,5 +6,4 @@ public class ClassC extends ClassB {
         super(10, 20);
         System.out.println("ClassC 생성자");
     }
-
 }
