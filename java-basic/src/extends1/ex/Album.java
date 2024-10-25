@@ -6,7 +6,7 @@ public class Album extends Item{
     public Album(String name, int price, String artist) {
         super(name, price);
         this.artist = artist;
-    }
+    }   
 
     @Override
     public void print() {
