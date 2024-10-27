@@ -10,7 +10,7 @@ public class PayMain0 {
         String payOption1 = "kakao";
         int amount1 = 5000;
         payService.processPay(payOption1, amount1);
-
+    
         //naver 결제
         String payOption2 = "naver";
         int amount2 = 10000;
