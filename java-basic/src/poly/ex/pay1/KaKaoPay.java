@@ -1,9 +1,6 @@
-package poly.lsy;
+package poly.ex.pay1;
 
-import poly.ex.pay1.Pay;
-
-public class KaKaoPay implements Pay {
-
+public class KaKaoPay implements Pay{
 
     @Override
     public boolean pay(int amount) {

@@ -1,6 +1,8 @@
 package poly.lsy;
 
 
+import poly.ex.pay1.Pay;
+
 public class PayService {
 
     private Pay pay;
