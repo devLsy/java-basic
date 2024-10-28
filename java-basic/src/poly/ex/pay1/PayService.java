@@ -1,23 +1,16 @@
 package poly.ex.pay1;
 
+import poly.ex.pay0.PayStore;
+
 public class PayService {
 
+    //변하지 않는 부분
     public void processPay(String option, int amount) {
 
-        boolean result;
         System.out.println("결제를 시작합니다: option=" + option + ", amount=" + amount);
 
-        Pay pay;
-        if (option.equals("kakao")) {
-            pay = new KaKaoPay();
-        } else if (option.equals("naver")) {
-            pay = new NaverPay();
-        } else {
-            pay = null;
-            System.out.println("결제 수단이 없습니다.");
-        }
-
-        result = pay.pay(amount);
+        Pay pay = PayStore.findPay(option);
+        boolean result = pay.pay(amount);
 
         if (result) {
             System.out.println("결제가 성공했습니다.");
